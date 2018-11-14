@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		//콘솔창에 정삼각형 변의 길이(입력값)를 받아야 한다.
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+
+		// 입력한 받은 값 중 큰 숫자만 출력한다.
+		if(a > b) {
+			System.out.println(a);
+		} else if(b > a) {
+			System.out.println(b);
+		}
+		sc.close();
+ }
+}

@@ -1,0 +1,70 @@
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		/*
+		(1) 두 개의 숫자를 입력받고, 작은 수부터 큰 수까지 더 한 값을 출력하기
+		예를 들어, 3과 7을 입력받은 경우 3+4+5+6+7을 더해서 25를 출력한다
+		- 입력 샘플 : 3 7  | 출력 샘플 : 25
+		- 입력 샘플 : 10 5 | 출력 샘플 : 45
+		*/
+
+		// 두 문자 a, b에 콘솔창에 입력 받은 값을 할당한다.
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		// a부터 b까지의 합계를 담을 변수 설정한다.
+		int sum = 0;
+
+		// 앞서 a, b에서 +1 씩 할당한 값을 더한다.
+		if(a > b ) {
+			for(int i = a; a > b;++i) {
+				sum +=a;
+			}
+		} else if (a < b) {
+			for(int i = b; b > a; ++i) {
+				sum +=b;
+		}
+		}
+
+		// 결과물이 왜 계속 출력만 할까? for문을 쓰면 안 되는걸까?!
+		System.out.println(sum);
+ }
+}
+
+=============================================================================
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		/*
+		(1) 두 개의 숫자를 입력받고, 작은 수부터 큰 수까지 더 한 값을 출력하기
+		예를 들어, 3과 7을 입력받은 경우 3+4+5+6+7을 더해서 25를 출력한다
+		- 입력 샘플 : 3 7  | 출력 샘플 : 25
+		- 입력 샘플 : 10 5 | 출력 샘플 : 45
+		*/
+
+		// 두 문자 a, b에 콘솔창에 입력 받은 값을 할당한다.
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int sum = 0;
+
+		if(a < b) {
+			while(a <= b) {
+				sum += a;
+				a++;
+		}
+		System.out.println(sum);
+		} else if (a > b) {
+			while(b <= a) {
+				sum += b;
+				b++;
+			}
+			System.out.println(sum);
+		}
+ }
