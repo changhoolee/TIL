@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		/*
+		 * (3) 문장을 입력받고, 20번째 이후부터는 말줄임표(...)로 표기하기
+		 */
+
+		Scanner sc = new Scanner(System.in);
+		String a = sc.nextLine();
+//		이 length()메소드의 길이가 50이라는걸 확인했다.
+//		System.out.println(a.length());
+		String cut = a.substring(0, 19);
+//		System.out.println(cut);
+//		append()메소드를 쓰기 위해 StingBuffer 클래스의 객체인 sb를 써봤다.
+		StringBuffer sb = new StringBuffer(cut);
+//		System.out.println(sb);
+		sb.append(" ...");
+		System.out.println(sb);
+//		허허... if 문을 써서 20번째 이후 부터 해당 되면 "..."을 표기하는걸로 하고 싶은데
+//		50번 째 중에서 20번 째 부터 ...으로 바꿔준다.
+//		a.substring(20, 50);
+//		System.out.println(a.);
+}
