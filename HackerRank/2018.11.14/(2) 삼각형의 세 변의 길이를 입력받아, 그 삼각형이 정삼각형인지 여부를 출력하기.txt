@@ -12,11 +12,9 @@ public class Main {
 		int c = sc.nextInt();
 
 		// 정삼각형이 안될 수도 있는 경우의 수를 나열한다.
-		if (a==b && a==c && c==b) {
+		if (a==c && c==b) {
 			System.out.println("정삼각형입니다.");
-		} else if (a!=b && a==c && c!=b) {
-			System.out.println("정삼각형이 아닙니다.");
-		} else if (a!=b && a!=c && c==b) {
+		} else {
 			System.out.println("정삼각형이 아닙니다.");
 		}
 		sc.close();
