@@ -1,6 +1,8 @@
+package y2018.d1112;
+
 import java.util.Scanner;
 
-public class Solution {
+public class SecondExam {
 
     public static void main(String[] args) {
         // 콘솔창에 입력하기 위한 클래스를 할당한다.
