@@ -14,11 +14,12 @@ public class SecondExam {
 		// step2. 
 		
 		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
 		// 내가 콘솔창에 입력한 값들을 배열에 집어넣는다?
 		// [0] - 1,[1] - 3,[2] - 5,[3] - 7,[4] - 9
 		// 배열을 바로 if문으로 대소비교를 한다? 바깥에서 안 순으로
 
-//3 5 7 9 1 
+//3 5 7 9 1
 		
 //1 5 7 9 3
 //1 3 7 9 5
