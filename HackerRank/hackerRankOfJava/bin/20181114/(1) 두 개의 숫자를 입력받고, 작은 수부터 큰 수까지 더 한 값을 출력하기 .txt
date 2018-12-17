@@ -1,0 +1,77 @@
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		/*
+		(1) 두 개의 숫자를 입력받고, 작은 수부터 큰 수까지 더 한 값을 출력하기
+		예를 들어, 3과 7을 입력받은 경우 3+4+5+6+7을 더해서 25를 출력한다
+		- 입력 샘플 : 3 7  | 출력 샘플 : 25
+		- 입력 샘플 : 10 5 | 출력 샘플 : 45
+		*/
+		       // step 1: 입력 받은 두 수 중에 큰 수, 작은 수 찾기
+		       // step 2 : 작은수부터 큰수까지 더하기
+
+		       // 두 문자 a, b에 콘솔창에 입력 받은 값을 할당한다.
+		       Scanner sc = new Scanner(System.in);
+
+		       int num1 = sc.nextInt();
+		       int num2 = sc.nextInt();
+		       // a부터 b까지의 합계를 담을 변수 설정한다.
+		       int sum = 0;
+		       // int smallNum = -1;
+
+
+		       // step 1: 입력 받은 두 수 중에 큰 수, 작은 수 찾기
+		       // num1이 더 크다면 swap 한다.
+		       if( num1 > num2 ) {
+		           int temp = num2;  // num1, num2, temp
+		           num2 = num1;
+		           num1 = temp;
+		       }
+
+		       // step 2 : 작은수부터 큰수까지 더하기
+		       for(int i = num1; i <= num2 ; ++i) {
+		           sum +=i;
+		           //System.out.println("num1: "+num1+ ",num2:"+num2+ ",i:"+i);
+		       }
+
+		       System.out.println(sum);
+		   }
+		}
+
+=============================================================================
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		/*
+		(1) 두 개의 숫자를 입력받고, 작은 수부터 큰 수까지 더 한 값을 출력하기
+		예를 들어, 3과 7을 입력받은 경우 3+4+5+6+7을 더해서 25를 출력한다
+		- 입력 샘플 : 3 7  | 출력 샘플 : 25
+		- 입력 샘플 : 10 5 | 출력 샘플 : 45
+		*/
+
+		// 두 문자 a, b에 콘솔창에 입력 받은 값을 할당한다.
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int sum = 0;
+
+		if(a < b) {
+			while(a <= b) {
+				sum += a;
+				a++;
+		}
+		System.out.println(sum);
+		} else if (a > b) {
+			while(b <= a) {
+				sum += b;
+				b++;
+			}
+			System.out.println(sum);
+		}
+ }

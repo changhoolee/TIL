@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		//콘솔창에 정삼각형 변의 길이(입력값)를 받아야 한다.
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+
+		// 정삼각형이 안될 수도 있는 경우의 수를 나열한다.
+		if (a==c && c==b) {
+			System.out.println("정삼각형입니다.");
+		} else {
+			System.out.println("정삼각형이 아닙니다.");
+		}
+		sc.close();
+ }
+}

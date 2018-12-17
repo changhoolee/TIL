@@ -12,6 +12,11 @@ public class FirstExam {
 //    	int SIZE = 5;
 //    	System.out.println(SIZE);
     	int[] arr = new int[5];
+    	List<Integer> list = new ArrayList<Integer>();
+    
+    	//SIZe -> arr.length / list.size();
+    	
+    	
     	for(int i=0; i<5; i++) {
 
     		arr[i] = scanner.nextInt();
