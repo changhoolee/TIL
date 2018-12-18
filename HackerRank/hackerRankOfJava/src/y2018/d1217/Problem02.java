@@ -40,6 +40,8 @@ public class Problem02 {
 		NumberFormat china = NumberFormat.getCurrencyInstance(Locale.CHINA);
 		NumberFormat france = NumberFormat.getCurrencyInstance(Locale.FRANCE);
 		
+		// All 역활을 하는 클래스가 없을까? NumberFormat을 담는...?
+		
 		System.out.println("US : " + us.format(value));
 		System.out.println("INDIA : " + india.format(value));
 		System.out.println("CHINA : " + china.format(value));

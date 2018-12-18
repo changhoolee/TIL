@@ -6,7 +6,7 @@ public class Problem01 {
 
 	public static void main(String[] args) {
 		
-		question01();
+//		question01();
 		question02();
 	}
 	
@@ -36,6 +36,8 @@ public class Problem01 {
 		
 		String A = scan.next();
 		
+		scan.close();
+		
 		int frontWord = 0;
 		
 		int backWord = A.length() -1;
@@ -44,7 +46,7 @@ public class Problem01 {
 			
 			if(A.charAt(frontWord) == (A.charAt(backWord))) {
 				frontWord++;
-				backWord++;
+				backWord--;
 			} else {
 				System.out.println("No");
 				break;
@@ -55,7 +57,6 @@ public class Problem01 {
 			System.out.println("Yes");
 		}
 	}
-
 }
 //		
 //		// 콘솔창에 madam이라고 할당하면 m==m, a==a 이므로 Yes 를 출력한다.
