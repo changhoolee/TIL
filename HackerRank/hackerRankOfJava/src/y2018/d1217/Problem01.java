@@ -2,7 +2,7 @@ package y2018.d1217;
 
 import java.util.Scanner;
 
-public class Question01 {
+public class Problem01 {
 
 	public static void main(String[] args) {
 		
