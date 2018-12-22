@@ -24,7 +24,7 @@ public class Pratice01 {
 				// 비교하고자하는 데이터 값 설정하기
 				
 				int first = 0;
-				int back = A.length()-1;
+				int back = A.length()-1; // 이게 정확하게 무얼 의미하지??
 				
 				// 설정 데이터들을 이용해 흐름 출력하기
 				
