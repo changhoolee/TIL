@@ -1,5 +1,6 @@
 package y2018.d1225;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Pratice01 {
@@ -7,7 +8,8 @@ public class Pratice01 {
 	public static void main(String[] args) {
 		
 		
-		pratice01();
+		// pratice01();
+		pratice02();
 	}
 	
 
@@ -40,4 +42,31 @@ public class Pratice01 {
 	 }
 	 // 배열과 리스트의 메모리 저장 구조 및 방식을 잘 못 이해한듯???
 	}
+ 
+ 	public static void pratice02() {
+ 		
+ 		/*
+ 		리스트로 1 2 4 5 3 2 41 2 1 2 만들어보기
+ 		*/
+ 		
+ 		// 1. 변수 설정하기
+ 		ArrayList <Integer> list = new ArrayList  <> ();
+ 		int SIZE = 10; // ArrayList <Integer> list = new ArrayList <> (10);와 어떤 차이가 있는걸까?  
+ 		
+ 		// 2. 리스트 입력하기
+ 		Scanner scan = new Scanner(System.in);
+ 		
+ 		for(int i = 0; i < SIZE; i++) {
+ 			list.add(scan.nextInt()); //
+ 		}
+ 		
+ 		// 3. 리스트 출력하기
+ 		System.out.print("입력하고자 하는 값은 : ");
+ 		
+ 		for(int i = 0; i < SIZE-1; i++) {
+ 			System.out.print(list.get(i)+ ", ");
+ 		}
+ 		
+ 		System.out.print(list.get(SIZE-1));
+ 	}
 }
