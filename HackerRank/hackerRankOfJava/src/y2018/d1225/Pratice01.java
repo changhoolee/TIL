@@ -62,11 +62,13 @@ public class Pratice01 {
  		
  		// 3. 리스트 출력하기
  		System.out.print("입력하고자 하는 값은 : ");
- 		
+ 		// 반복문을 통해서 list.add()메소드를 이용해 10개를 입력받는다.
  		for(int i = 0; i < SIZE-1; i++) {
- 			System.out.print(list.get(i)+ ", ");
+ 			System.out.print(list.get(i)+ ", "); 
  		}
  		
- 		System.out.print(list.get(SIZE-1));
+ 		System.out.print(list.get(SIZE-1)); // 3-2) 정확하게 index(9)까지의 값까지 출력하기 위해 SIZE-1을 해서 출력한다.
+
+
  	}
 }
