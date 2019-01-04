@@ -7,9 +7,9 @@ public class Pratice01 {
 	
 	public static void main(String[] args) {
 		
-		
-		// pratice01();
-		pratice02();
+//		pratice01();
+//		pratice02();
+		pratice03();
 	}
 	
 
@@ -70,5 +70,27 @@ public class Pratice01 {
  		System.out.print(list.get(SIZE-1)); // 3-2) 정확하게 index(9)까지의 값까지 출력하기 위해 SIZE-1을 해서 출력한다.
 
 
+ 	}
+ 	
+ 	public static void pratice03() {
+ 		
+ 		// 1. 입력하기
+ 		// 1-2 변수를 배열에 설정하기
+ 		int [] list = new int [5];
+ 		
+ 		Scanner scan = new Scanner(System.in);
+ 		
+ 		for(int i = 0; i < list.length; i++) {
+ 	
+ 			list [i] = scan.nextInt();
+ 		}
+ 		
+ 		// 2. 포맷에 맞게 출력하기
+ 		
+ 		System.out.print("입력하고자 하는 배열의 값 :");
+ 		for(int i = 0; i < list.length; i++) {
+ 			
+ 			System.out.print(list[i] + " ,");
+ 		}
  	}
 }

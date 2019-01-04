@@ -82,7 +82,7 @@ public class Pratice03 {
 		// 3. 출력하기 3단계
 		System.out.print("입력 받은 수 :");
 		
-		for( int i=0; i<SIZE-1; i++){
+		for( int i=0; i<SIZE-1; i++) {
 			System.out.print(list.get(i)+","); 
 		}
 		
