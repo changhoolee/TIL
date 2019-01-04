@@ -3,7 +3,7 @@ package y2019.d0104;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Pratice {
+public class Pratice01 {
 	
 	public static void main(String[] args) {
 		
@@ -88,9 +88,5 @@ public class Pratice {
 		for(int i = 0; i < line.length; i++) {
 			System.out.println(line[i]);
 		}
-		
-		
-		
-	}
-	
+	}	
 }
