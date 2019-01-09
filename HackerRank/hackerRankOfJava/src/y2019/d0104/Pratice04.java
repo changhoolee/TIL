@@ -6,12 +6,12 @@ public class Pratice04 {
 	
 	static void a() {
 		int i  = 10;
-//		b();
+		b();
 	}
 	
 	static void b() {
-//		int i = 30; // 만약 b메소드 안에 지역변수가 없다면 클래스의 전역 변수를 끌어다쓴다.
-//		System.out.println(i); // 전역변수 사용
+		int i = 30; // 만약 b메소드 안에 지역변수가 없다면 클래스의 전역 변수를 끌어다쓴다.
+		System.out.println(i); // 전역변수를 사용
 	}
 	
 	public static void main(String[] args) { 
