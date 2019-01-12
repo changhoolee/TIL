@@ -7,8 +7,8 @@ public class Review {
 
 	public static void main(String[] args) {
 		
-		review01();
-		review02();
+//		review01();
+//		review02();
 		
 	}
 	
@@ -65,5 +65,4 @@ public class Review {
 		}
 		
 	}
-
 }
