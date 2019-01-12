@@ -1,4 +1,4 @@
-# TIL /play horn
+# TIL
 Today i learned.
 First i learned..
 
